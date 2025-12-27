@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Channel Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">YourChannel</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#videos">Videos</a>
+            <a href="https://www.youtube.com/@yourchannel" target="_blank">YouTube</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Channel</h1>
+        <p>Subscribe for awesome content about [your topic]! New videos every week.</p>
+        <a href="https://www.youtube.com/@yourchannel/subscribe" target="_blank" class="btn">Subscribe Now</a>
+    </section>
+
+    <section id="videos">
+        <h2>Latest Videos</h2>
+        <div class="videos-grid">
+            <!-- Replace VIDEO_ID, title, and description with your own -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Your First Video Title</h3>
+                    <p>Short description of the video...</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Another Awesome Video</h3>
+                    <p>Short description here...</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Latest Upload</h3>
+                    <p>Description of your newest video...</p>
+                </div>
+            </div>
+            <!-- Add more video cards as you upload new videos -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Channel Name. All rights reserved.</p>
+        <p><a href="https://www.youtube.com/@yourchannel" target="_blank">YouTube Channel</a></p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
