@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts - MrAwo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">MrAwo69</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="scripts.html">Scripts</a>
+            <a href="about.html">About</a>
+            <a href="https://www.youtube.com/@MrAwo69" target="_blank">YouTube</a>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>All Roblox Scripts</h1>
+        <p>Free scripts from my videos. Copy-paste and use in your games! New ones added regularly.</p>
+    </section>
+
+    <section class="scripts-grid">
+        <!-- Add a new card for each script/video -->
+        <div class="script-card">
+            <h3>Script Title 1 (e.g., Clicking Simulator)</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+            </div>
+            <p>Short description from your video...</p>
+            <pre><code>-- Your full script code here
+print("Hello from MrAwo69!")</code></pre>
+            <button onclick="navigator.clipboard.writeText(this.previousElementSibling.querySelector('code').innerText)">Copy Script</button>
+        </div>
+
+        <div class="script-card">
+            <h3>Script Title 2 (e.g., Glove System)</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" allowfullscreen></iframe>
+            </div>
+            <p>Description...</p>
+            <pre><code>-- Paste script here</code></pre>
+            <button onclick="navigator.clipboard.writeText(this.previousElementSibling.querySelector('code').innerText)">Copy Script</button>
+        </div>
+
+        <!-- Add more cards as you upload new videos/scripts -->
+    </section>
+
+    <footer>
+        <p>© 2025 MrAwo69. All rights reserved.</p>
+    </footer>
+</body>
+</html>
